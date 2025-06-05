@@ -68,8 +68,8 @@ header {
     bottom: -87px;
     left: 50%;
     transform: translateX(-50%);
-    /* width: 100%; */
-    /* max-width: 1120px; */
+    width: 100%;
+    max-width: 1120px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     h1 {
       font-size: 60px;
@@ -90,6 +90,8 @@ header {
     .search-bar {
       display: flex;
       align-items: center;
+      max-width: 1040px;
+      width: 100%;
       background: var(--white);
       border-radius: 72px;
       padding: 16px 24px;
@@ -102,7 +104,15 @@ header {
         gap: 12px;
         flex: 1;
         min-width: 150px;
-
+        position: relative;
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          height: 32px;
+          width: 1px;
+          background-color: #d9d9d9;
+        }
         h4 {
           font-size: 14px;
           font-weight: 600;
@@ -135,14 +145,6 @@ header {
         cursor: pointer;
         flex-shrink: 0;
       }
-    }
-
-    .search-item:not(:last-child)::after {
-      content: "";
-      height: 32px;
-      width: 1px;
-      background: #d9d9d9;
-      margin-left: 16px;
     }
   }
 }
