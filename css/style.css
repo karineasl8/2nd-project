@@ -257,8 +257,7 @@ main {
   .features__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    align-items: start;
+    align-items: center;
 
     @media (max-width: 768px) {
       gap: 32px;
@@ -320,6 +319,59 @@ main {
 
     @media (max-width: 768px) {
       font-size: 0.9rem;
+    }
+  }
+
+  .partners-section {
+    padding: 84px 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.1;
+      margin-bottom: 72px;
+      color: black;
+    }
+
+    .partners-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .partner-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.3s, opacity 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      img {
+        max-height: 48px;
+        width: auto;
+      }
+
+      span {
+        font-size: 24px;
+        line-height: 1.1;
+        color: var(--partners);
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .partners-section h2 {
+      font-size: 32px;
+      margin-bottom: 48px;
+    }
+
+    .partners-logos {
+      gap: 40px;
     }
   }
 }
