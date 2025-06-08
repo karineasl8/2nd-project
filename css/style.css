@@ -375,3 +375,18 @@ main {
   }
 
 }
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer-link:hover {
+  color: #00d1b2;
+  text-decoration: underline;
+}
+.footer-social svg {
+  transition: transform 0.13s;
+}
+.footer-social:hover svg {
+  transform: scale(1.11);
+}
