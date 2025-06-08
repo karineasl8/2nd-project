@@ -1,0 +1,131 @@
+  .top-book-section {
+  margin: 60px auto 0 auto;
+  max-width: 1200px;
+  padding: 0 16px;
+  text-align: center;
+}
+.top-book-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin-bottom: 32px;
+}
+.top-book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 24px;
+}
+.book-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(20,20,40,.07);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  transition: transform .15s;
+}
+.book-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(20,20,40,.13);
+}
+.book-card-img {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+.book-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.book-card-rating {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #444;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 4px 12px 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.book-card-rating .star {
+  color: #FFD700;
+  margin-right: 2px;
+  font-size: 1.1em;
+}
+.book-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.book-card-title {
+  font-size: 1.07rem;
+  font-weight: 600;
+}
+.book-card-price {
+  font-size: 1.07rem;
+  font-weight: 700;
+  color: #222;
+}
+.book-card-meta {
+  text-align: left;
+  color: #757575;
+  font-size: .95rem;
+  margin: 8px 20px 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.book-card-location::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background: url('data:image/svg+xml;utf8,<svg fill="gray" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 1 0 2 6c0 4.314 6 10 6 10zm0-7.25A2.75 2.75 0 1 1 8 3.5a2.75 2.75 0 0 1 0 5.5z"/></svg>') no-repeat center/contain;
+}
+.top-book-footer {
+  margin: 32px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.top-book-seeall {
+  font-size: 1.08rem;
+  font-weight: 600;
+  background: #fff;
+  border: 1.5px solid #eaeaea;
+  border-radius: 999px;
+  padding: 12px 38px;
+  cursor: pointer;
+  transition: background 0.12s, box-shadow 0.13s;
+  box-shadow: 0 1px 4px rgba(40,40,60,.06);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.top-book-seeall:hover {
+  background: #f5f5f7;
+  box-shadow: 0 4px 16px rgba(20,20,40,.08);
+}
+@media (max-width: 1000px) {
+  .top-book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .top-book-grid {
+    grid-template-columns: 1fr;
+  }
+  .book-card-img {
+    height: 150px;
+  }
+}

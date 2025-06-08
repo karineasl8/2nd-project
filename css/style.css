@@ -223,7 +223,6 @@ header {
 }
 
 main {
-  padding: 60px 20px;
   padding-top: 160px;
   background-color: #f8f9fa;
 
@@ -374,4 +373,5 @@ main {
       gap: 40px;
     }
   }
+
 }
