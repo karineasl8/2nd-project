@@ -1,5 +1,7 @@
 .feature-news-section {
   padding: 80px 160px 80px 160px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .feature-news-header {
