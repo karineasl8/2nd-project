@@ -43,7 +43,7 @@
 
 .explore-maldives-divider {
   border: none;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
   margin: 0 0 48px 0;
   width: 100%;
 }
@@ -79,7 +79,6 @@
   cursor: pointer;
 }
 
-
 .explore-maldives-btn span {
   font-weight: 700;
   font-size: 16px;
@@ -102,7 +101,6 @@
   min-height: 240px;
   object-fit: cover;
   border-radius: 16px;
-
 }
 .maldives-card-title {
   color: #fff;
@@ -111,14 +109,78 @@
   margin: 14px 0 17px 0;
 }
 
-@media (max-width: 900px) {
-  .explore-maldives-content { padding: 40px 10px 32px 10px; }
-  .explore-maldives-bottom { flex-direction: column; gap: 32px; }
-  .explore-maldives-cards { justify-content: flex-start; gap: 18px; }
+@media (max-width: 1024px) {
+  .explore-maldives-content {
+    margin: 100px 60px 40px 60px;
+
+    .explore-maldives-title {
+      font-size: 64px;
+      margin-bottom: 60px;
+    }
+
+    .explore-maldives-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .explore-maldives-cards {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .maldives-card {
+      max-width: 160px;
+    }
+
+    .maldives-card-title {
+      font-size: 16px;
+    }
+    .explore-maldives-desc {
+      margin: 0;
+    }
+  }
 }
-@media (max-width: 650px) {
-  .explore-maldives-cards { gap: 9px; }
-  .maldives-card { width: 100px; }
-  .maldives-card img { height: 70px; }
-  .explore-maldives-title { font-size: 2.3rem; }
+
+@media (max-width: 768px) {
+  .explore-maldives-content {
+    margin: 60px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .explore-maldives-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+
+  .explore-maldives-divider {
+    margin-bottom: 32px;
+  }
+
+  .explore-maldives-bottom {
+    align-items: center;
+  }
+
+  .explore-maldives-desc {
+    font-size: 16px;
+    max-width: 100%;
+    align-items: center;
+    margin: 0;
+    flex: 0;
+  }
+
+  .explore-maldives-btn {
+    margin: 0 auto;
+  }
+
+  .explore-maldives-cards {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .maldives-card-title {
+    font-size: 16px;
+  }
 }
